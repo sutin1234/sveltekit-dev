@@ -2,24 +2,6 @@
 module.exports = {
 	extends: '@sveltejs/snowpack-config',
 	plugins: [
-		[
-			'@snowpack/plugin-build-script',
-			{
-				cmd: "postcss",
-				input: [".css", ".pcss"],
-				output: [".css"],
-			}
-		],
-	
-		[
-			'@snowpack/plugin-build-script',
-			{
-				cmd: "postcss",
-				input: [".css", ".pcss"],
-				output: [".css"],
-			}
-		],
-	
 		...require("@sveltejs/snowpack-config").plugins,
 	
 '@snowpack/plugin-typescript'

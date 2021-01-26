@@ -6,6 +6,6 @@ module.exports = {
 		'src/components': '/_components'
 	},
 	alias: {
-		$components: './src/components'
+		'@': './src'
 	}
 };

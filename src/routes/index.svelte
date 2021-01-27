@@ -1,9 +1,16 @@
 <script>
   import Counter from "@/components/Counter.svelte";
+  const {MODE, NODE_ENV, SSR, SNOWPACK_PUBLIC_KANYE_API} = import.meta.env
 </script>
 
-<main>
+<main> 
   <h1>Hello world!</h1>
+  <div>
+    MODE: {MODE}
+    ENV: {NODE_ENV}
+    SSR: {SSR}
+    GW_API: {SNOWPACK_PUBLIC_KANYE_API}
+  </div>
 
   <Counter />
   <p>
